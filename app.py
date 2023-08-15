@@ -10,5 +10,9 @@ def main():
 def read(content):
     return {"payload":content}
 
+@app.route("/create/:<content>", methods=["POST"])
+def read(content):
+    return {"payload":content}
+
 if __name__ == "main":
     app.run(debug=True)
