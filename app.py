@@ -11,7 +11,11 @@ def read(content):
     return {"payload":content}
 
 @app.route("/create/:<content>", methods=["POST"])
-def read(content):
+def create(content):
+    return {"payload":content}
+
+@app.route("/init/:<content>", methods=["GET"])
+def init(content):
     return {"payload":content}
 
 if __name__ == "main":
